@@ -154,7 +154,25 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 
 | Feature | Tested? | User Input Required | User Feedback Provided | Pass/Fail | Fix |
 | :--: | -- | -- | -- | :--: | --: |
-| Navbar Logo and Icons | Yes | Click | Logo takes user to 'Home', icons take user to intended location. Tooltips used in desktop/mobile view to provide accessibility and further information about the icons purpose and intention | Pass | - |
+| Navbar Logo and Icons | | Click | Logo takes user to 'Home', icons take user to intended location. Tooltips used in desktop/mobile view to provide accessibility and further information about the icons purpose and intention |  | - |
+| Santa's Helper button |  | Click  | When user clicks on the "Santa's helper? Click here" button from the home page they are taken to Santa's "Nice List" where a list of names can be seen |  |  |
+| Santa's Helper view Wish List |  | Click | When user clicks on a name from the "Nice List" the "Wish List" for that person is presented in a new screen |  |  |
+| Marking coal on someone's Wish List |  | Click | Santa's helper can click on coal icon at bottom of a person's wish list. Coal icon darkens and coal count for that person increments by 1 for all to see |  |  |
+| Deselecting coal on someone's Wish List |  | Click | Santa's helper can click on pre-selected coal icon at bottom of a person's wish list. Coal icon lightens and coal count for that person decrements by 1 for all to see |  |  |
+| Send a Wish |  | Click | When user clicks on "Send a wish to Santa" button from the home page they are taken to a page with two buttons asking them if they are Naughty or Nice |  |  |
+| Naughty button |  | Click | When user selects "Naughty" from the eligibility screen they are presented with a verification screen checking if they are sure they want coal for Christmas with "Yes" and "No" buttons to choose from |  |  |
+| Confirm Naughty |  | Click | When user confirms "Yes" they are naughty, user is presented with a screen of coal |  |  |
+| Don't confirm Naughty |  | Click | When user confirms "No" they are not naughty, user is presented with screen asking them to register to create their wish list |  |  |
+| Nice button |  | Click | When user selects "Nice" from the eligibility screen they are presented with screen asking them to register to create their wish list |  |  |
+| Register | | Register form | Upon registering user is presented with their own wish list page |  |  |
+| Add wish |  | Text | Registered user can add wish to their own wish list which can be viewed by anyone |  |  |
+| Edit wish |  | Text | Registered user can edit items on their own wish list |  |  |
+| Delete wish |  |  | Registered user can delete items on their own wish list |  |  |
+| Log Out |  | Click | Registered user is presented with "Are you sure..." check | | |  
+| Log In |  | Click | Registered user is presented with Login screen, which upon completing, they are taken to their own wish list page |  |  |
+| Admin - Add User |  |  | When a user is added via the admin dashboard ensure that they can log in from the application's front end |  |  |
+| Admin - Delete User |  |  | When a user is deleted via the admin dashboard ensure that they no longer appear on the "Nice List" , can no longer login and no longer have a "Wish List" stored |  |  |
+
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>
