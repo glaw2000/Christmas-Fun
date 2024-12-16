@@ -1,20 +1,20 @@
+# Dear Santa
 ![Project Name](documentation/images/Placeholder.png)
 
 <p align="center">
 | <a href="#">Live Project</a> |
   <a href="#">Admin Panel</a> |
-  <a href="#">Project Board</a> |
+  <a href="https://github.com/users/glaw2000/projects/3">Project Board</a> |
 </p>
 
 ## Introduction
-
-This _README Template_ serves as boilerplate placeholder for your new GitHub repo.
-
-Developed for personal use on _Code Institute: Full Stack Software Developer Bootcamp_ projects with intention of future expanding of the scope to _support other students and developers_.
+### Purpose
+To build a full software stack application using the django framework for our final Hackathon on the Code Institute Full Stack Development Bootcamp. 
+The application is called Dear Santa and is aimed at everybody that celebrates Christmas or gifts at Christmas time. The aim of the appication is to provide a user with somewhere to either input their Christmas wishes, or as a gift giver, somewhere to view other peoples' wishes. 
 
 ## Table of Contents
 
-- [Project Name](#)
+- [Dear Santa](#dear-santa)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Project Outline](#project-outline)
@@ -231,12 +231,17 @@ Dates formatted to [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.
 
 ### Epic - 
 
-| ID | User Story | RICE | MoSCoW |
-|:-:|:-|:-:|:-:|
-| #1 | As a _role_ I can _capability_ so that _received benefit_ | Score | 🟢 |
-| #2 | As a _role_ I can _capability_ so that _received benefit_ | Score | 🟡 |
-| #3 | As a _role_ I can _capability_ so that _received benefit_ | Score | 🟠 |
-| #4 | As a _role_ I can _capability_ so that _received benefit_ | Score | 🔴 |
+| ID | User Story | MoSCoW |
+|:-:|:-|:-:|
+| #1 | As Santa I want to know what people want so that nice people get their wishes granted | 🟢 |
+| #2 | As a developer I want to create a visually attractive site so that people want to use it | 🟢 |
+| #3 | As a nice person I want to be able to add my wish list so that Santa knows which gifts to deliver | 🟢 |
+| #4 | As Santa I want to know who is naughty or nice so that I know who to give coal to | 🟠 |
+| #5 | As Santa's helper I want to let Santa know that a gift is already under the tree for a person so that it doesn't get duplicated  | 🟡 |
+| #6 | As Santa I want to know what gifts are already under the tree for a person so that I don't gift the same thing.  | 🟡 |
+| #7 | As a Developer I want to provide search functionality so that it is easier for a user to find a gift recipient  | 🔴 |
+| #8 | As a nice person I want to be able to hide certain items on my wish list so that only certain people can see them | 🔴 |
+
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 
