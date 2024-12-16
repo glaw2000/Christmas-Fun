@@ -1,5 +1,5 @@
 # Dear Santa
-![Project Name](documentation/images/Placeholder.png)
+![Dear Santa](static/images/project-banner.webp)
 
 <p align="center">
 | <a href="#">Live Project</a> |
@@ -9,7 +9,7 @@
 
 ## Introduction
 ### Purpose
-To build a full software stack application using the django framework for our final Hackathon on the Code Institute Full Stack Development Bootcamp. 
+To build a full software stack application using the django framework for our final Hackathon on the Code Institute Full Stack Development Bootcamp.\
 The application is called Dear Santa and is aimed at everybody that celebrates Christmas or gifts at Christmas time. The aim of the appication is to provide a user with somewhere to either input their Christmas wishes, or as a gift giver, somewhere to view other peoples' wishes. 
 
 ## Table of Contents
@@ -107,8 +107,12 @@ Explain the naming convention used for the project to aid with clean maintainabl
 
 | ID | Name | Type | CSS Variable | HSL | HEX |
 |:-:|:-|:-|:-:|:-:|:-:|
-| 1 | White | Primary Brand | `--color-primary` | hsl(0, 0%, 100%) | #ffffff |
-| 2 | Gunmetal | background | `--color-background` | hsl(180, 8%, 16%) | #272D2D |
+| 1 | Eerie Black |  | `--color-` | hsl(0, 0%, 13%) | #222222 |
+| 2 | Prussian Blue |  | `--color-` | hsl(201, 100%, 14%) | #002e46 |
+| 3 | Viridian |  | `--color-` | hsl(165, 100%, 25%) | #008060 |
+| 4 | Celeste |  | `--color-` | hsl(176, 69%, 81%) | #adf0eb |
+| 5 | Imperial Red |  | `--color-` | hsl(349, 98%, 50%) | #fb032f |
+| 6 | White |  | `--color-` | hsl(0, 0%, 100%) | #ffffff |
 
 ### Contrast
 
@@ -124,15 +128,14 @@ Potential tools for contrast compliance checks.
 
 ### Color Contrast Score Table
 
-| | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **1** | - |  |  |  |  |  |  |
-| **2** |  | - |  |  |  |  |  |
-| **3** |  |  | - |  |  |  |  |
-| **4** |  |  |  | - |  |  |  |
-| **5** |  |  |  |  | - |  |  |
-| **6** |  |  |  |  |  | - |  |
-| **7** |  |  |  |  |  |  | - |
+| | 1 | 2 | 3 | 4 | 5 | 6 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **1** | - | 🔴[1.12:1](https://webaim.org/resources/contrastchecker/?fcolor=222222&bcolor=002E46) | 🟠[3.22:1](https://webaim.org/resources/contrastchecker/?fcolor=222222&bcolor=008060) | 🟢[12.45:1](https://webaim.org/resources/contrastchecker/?fcolor=222222&bcolor=ADF0EB) | 🟠[3.9:1](https://webaim.org/resources/contrastchecker/?fcolor=222222&bcolor=FB032F) | 🟢[15.9:1](https://webaim.org/resources/contrastchecker/?fcolor=222222&bcolor=FFFFFF) |
+| **2** | 🔴[1.12:1](https://webaim.org/resources/contrastchecker/?fcolor=002E46&bcolor=222222) | - | 🔴[2.87:1](https://webaim.org/resources/contrastchecker/?fcolor=002E46&bcolor=008060) | 🟢[11.11:1](https://webaim.org/resources/contrastchecker/?fcolor=002E46&bcolor=ADF0EB) | 🟠[3.48:1](https://webaim.org/resources/contrastchecker/?fcolor=002E46&bcolor=FB032F) | 🟢[14.19:1](https://webaim.org/resources/contrastchecker/?fcolor=002E46&bcolor=FFFFFF) |
+| **3** | 🟠[3.22:1](https://webaim.org/resources/contrastchecker/?fcolor=008060&bcolor=222222) | 🔴[2.87:1](https://webaim.org/resources/contrastchecker/?fcolor=008060&bcolor=002E46) | - | 🟠[3.86:1](https://webaim.org/resources/contrastchecker/?fcolor=008060&bcolor=ADF0EB) | 🔴[1.21:1](https://webaim.org/resources/contrastchecker/?fcolor=008060&bcolor=FB032F) | 🟡[4.93:1](https://webaim.org/resources/contrastchecker/?fcolor=008060&bcolor=FFFFFF) |
+| **4** | 🟢[12.45:1](https://webaim.org/resources/contrastchecker/?fcolor=ADF0EB&bcolor=222222) | 🟢[11.11:1](https://webaim.org/resources/contrastchecker/?fcolor=ADF0EB&bcolor=002E46) | 🟠[3.86:1](https://webaim.org/resources/contrastchecker/?fcolor=ADF0EB&bcolor=008060) | - | 🟠[3.18:1](https://webaim.org/resources/contrastchecker/?fcolor=ADF0EB&bcolor=FB032F) | 🔴[1.27:1](https://webaim.org/resources/contrastchecker/?fcolor=ADF0EB&bcolor=FFFFFF) |
+| **5** | 🟠[3.9:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=222222) | 🟠[3.48:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=002E46) | 🔴[1.21:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=008060) | 🟠[3.18:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=ADF0EB) | - | 🟠[4.07.1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=FFFFFF) |
+| **6** | 🟢[15.9:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=222222) | 🟢[14.19:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=002E46) | 🟡[4.93:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=008060) | 🔴[1.27:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=ADF0EB) | 🟠[4.07:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=FB032F) | - |
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 
@@ -155,8 +158,11 @@ Specific reference to font usage would include decisions that influence accompan
 
 ## Imagery
 
-Description of the images and reason for their inclusion within the _project_.\
-If credit is required, refence to these within the credit section of the README.
+During ideation of our project and deciding to include the Christmas theme we initially began with the name of _Santa's Elves_ which later changed, but did provide inspiration for image searches for a color palette and imagery for the project. 
+
+The image below was used as the initial starting point for the favicon and banner image, which expanded into using and tweaking the remainder of the image series on [Freepik](https://www.freepik.com/serie/19507053).
+
+![Santa's Elves](<static/images/Santa's Elves.png>)
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 
@@ -186,21 +192,12 @@ Agile Methodologies were followed and implemented via [GitHub Project](link)
 Buttons display current status of project issues using GitHub purple and green\
 Ensure you update the `user/repo` in both the button and link
 
-[![GitHub Issues - Closed](https://img.shields.io/github/issues-closed/user/repo?logo=GitHub&labelColor=grey&color=8957e5)](https://github.com/user/repo/issues?q=is%3Aissue+is%3Aclosed)
-[![GitHub Issues - Open](https://img.shields.io/github/issues/user/repo?logo=GitHub&labelColor=grey&color=238636)](https://github.com/user/repo/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub Issues - Closed](https://img.shields.io/github/issues-closed/glaw2000/Christmas-Fun?logo=GitHub&labelColor=grey&color=8957e5)](https://github.com/user/repo/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub Issues - Open](https://img.shields.io/github/issues/glaw2000/Christmas-Fun?logo=GitHub&labelColor=grey&color=238636)](https://github.com/user/repo/issues?q=is%3Aopen+is%3Aissue)
 
 ### Project Prioritisation
 
 After ideation establish required prioritisation of tasks for **MVP** delivery.
-
-<details>
-<summary>RICE Priority Assignment Method</summary>
-
-| ID | Reach | Impact | Confidence | Effort | Score |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| #1 | User Count | 1 to 5 | % | 1 to 5 | ( R x I x C ) / E |
-
-</details>
 
 <details>
 <summary>MoSCoW Priority Color Key</summary>
@@ -269,7 +266,7 @@ Dates formatted to [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.
 
 Provide a full breakdown of the _project_ database including the entity relationship diagram (ERD)
 
-![ERD](documentation/images/Placeholder.png)
+![ERD](<static/images/ERD Dear Santa.webp>)
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 
