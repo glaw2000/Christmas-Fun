@@ -1,17 +1,40 @@
-  {% load static %}
-  
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <ul class="nav col-md-4 justify-content-start">
-        <li><p>Grace</p></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/grace-lawrence2000/"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/glaw2000"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <img class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto" src="{% static 'images/Gonk.png' %}" alt="Christmas Gonk holding a gift">
+<footer>
 
-    <ul class="nav col-md-4 justify-content-end">
-        <li><p>Ricky</p></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/therickyroy/"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/TheRickyroy"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
-  </footer>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 justify-content-start">
+      <img src="{% static 'images/footer-left.png' %}" alt="">
+    </div>
+    <div class="col-6 justify-content-end">
+      <img src="{% static 'images/footer-right.png' %}" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="footer-links d-flex flex-wrap justify-content-between align-items-center py-3">
+
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="ms-3"><a class="footer-icon" href="https://www.linkedin.com/in/grace-lawrence2000/"><i
+          class="fa-brands fa-linkedin"></i></a></li>
+    <li class="ms-3"><a class="footer-icon" href="https://github.com/glaw2000"><i class="fa-brands fa-github"></i></a>
+    </li>
+    <li>
+      <p class="ms-3 footer-text">Grace</p>
+    </li>
+  </ul>
+
+  <img class="footer-logo" src="{% static 'images/Gonk.png' %}" alt="Christmas Gonk holding a gift">
+
+  <ul class="nav col-md-4 justify-content-start">
+    <li>
+      <p class="ms-3 footer-text">Ricky</p>
+    </li>
+    <li class="ms-3"><a class="footer-icon" href="https://github.com/TheRickyroy"><i
+          class="fa-brands fa-github"></i></a></li>
+    <li class="ms-3"><a class="footer-icon" href="https://www.linkedin.com/in/therickyroy/"><i
+          class="fa-brands fa-linkedin"></i></a></li>
+  </ul>
+</footer>
