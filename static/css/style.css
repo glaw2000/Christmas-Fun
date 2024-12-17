@@ -21,9 +21,6 @@ body {
   background-color: var(--color-main);
 }
 
-main {
-}
-
 h1,
 h2,
 h3,
@@ -66,6 +63,12 @@ p {
   border: none;
 }
 
+/* Navbar */
+.navbar {
+  background-color: var(--color-primary);
+}
+
+
 /* Footer */
 footer {
     position: relative;
@@ -84,6 +87,7 @@ footer {
 
 .footer-links {
   z-index: 1;
+  list-style: none;
 }
 
 .footer-icon {
