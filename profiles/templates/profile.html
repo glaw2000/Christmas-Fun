@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load cloudinary %}
+{% block content %}
+{% load static %}
+
+
+<!-- Edit Profile Buttons -->
+<nav class="text-center mb-4">
+  <h2 class="pb-3">{{ profile.user.username }}'s Profile</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <a class="btn" href="{% url 'edit-profile' %}">Edit Profile</a>
+      <a class="btn" href="{% url 'account_change_password' %}">Change Password</a>
+      <a class="btn" href="{% url 'account_logout' %}">Sign Out</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Profile Information -->
+<section class="container">
+  <div class="row justify-content-center">
+      <h2 class="pb-3">User Details</h2>
+      <ul>
+        <li><strong>Email:</strong> {{ current_emailaddress.email }}</li>
+        <li><strong> Display Name:</strong> {{ profile.display_name }}</li>
+        <li><strong>First Name:</strong> {{ profile.first_name }}</li>
+        <li><strong>Last Name:</strong> {{ profile.last_name }}</li>
+        <li><strong>Joined:</strong> {{ profile.created_on }}</li>
+        <li><strong>Last Login:</strong> {{ profile.last_login }}</li>
+      </ul>
+  </div>
+</section>
+
+{% endblock %}
