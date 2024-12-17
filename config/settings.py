@@ -33,6 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-glaw2000-christmasfun-z7df0l0i75y.ws.codeinstitute-ide.net',
+    '8000-glaw2000-christmasfun-3u3yj5rv7w3.ws.codeinstitute-ide.net',
     '.herokuapp.com'
 ]
 
