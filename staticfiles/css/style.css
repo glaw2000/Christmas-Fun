@@ -6,7 +6,7 @@
     --color-heading-muted: hsl(176, 69%, 76%);
     --color-button1: hsl(152, 99%, 31%);
     --color-button1-muted: hsl(152, 99%, 26%);
-    --color-button2: hsl(189, 100%, 14%);
+    --color-button2-muted: hsl(189, 100%, 14%);
     --color-button2-muted: hsl(189, 100%, 9%);
 }
 
@@ -29,20 +29,10 @@ p {
 
 .button1 {
     color: var(--color-text);
-    background-color: var(--color-button1);
-}
-
-.button1:hover {
-    color: var(--color-text);
-    background-color: var(--color-button1-muted);
+    background-color: var(--color-button1) !important;
 }
 
 .button2 {
     color: var(--color-text);
-    background-color: var(--color-button2);
-}
-
-.button2:hover {
-    color: var(--color-text);
-    background-color: var(--color-button2-muted);
+    background-color: var(--color-button2) !important;
 }
