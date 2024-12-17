@@ -3,27 +3,42 @@
 
 {% block content %}
 <!-- landing page content starts here -->
-<h1>Welcome to Dear Santa</h1>
 
-<div id="role">
-    <div id="helper">
-        <p>
-            This is where you can make a wish list for Santa. 
-            Santa and his helpers keep a close eye on everyones' wish lists 
-            and if you've been nice this year they will try to grant your wishes.
-        </p>
-        <a href="" id="help_btn" role="button" class ="btn button1">Santa's Helper? Click Here</a>
+<div class="row" id="role">
+
+    <h1>Welcome to Dear Santa</h1>
+    
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body" id="helper">
+
+                <p class="card-text">
+                    This is where you can make a wish list for Santa. <br> 
+                    Santa and his helpers keep a close eye on everyones' wish lists.<br> 
+                    If you have been nice this year, they will try to grant your wishes.
+                </p><br>
+
+                <a href="#" id="help_btn"role="button" class="btn btn-primary button1">Santa's Helper?<br>Click Here</a>
+            </div>
+        </div>
     </div>
+        
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body" id="wisher">
 
-    <div id="wisher">
-        <p>
-            This is where you can help Santa. If you know someone special who has made a wish 
-            to Santa then find them here and help Santa with granting their wishes. 
-            If you think someone has been naughty this year, you can also find them here and let Santa know.            
-        </p>
-        <a href="" id="wish_btn" role="button" class="btn button2">Send a wish to Santa</a>
+                <p class="card-text">
+                    This is where you can help Santa. If you know someone special who has made a wish 
+                    to Santa then find them here and help Santa with granting their wishes.
+                    If you think someone has been naughty this year, you can also find them here and let Santa know.            
+                </p><br>
+
+                <a href="#" id="wish_btn" role="button" class="btn btn-primary button2">Send a wish to Santa.<br>Click Here</a>
+            </div>
+        </div>
     </div>
 
 </div>
+
 <!-- landing page content starts here -->
 {% endblock content %}

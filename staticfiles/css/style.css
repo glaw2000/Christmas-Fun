@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --color-main: hsl(201, 100%, 14%);
     --color-text: hsl(0, 0%, 100%);
@@ -6,7 +9,7 @@
     --color-heading-muted: hsl(176, 69%, 76%);
     --color-button1: hsl(152, 99%, 31%);
     --color-button1-muted: hsl(152, 99%, 26%);
-    --color-button2-muted: hsl(189, 100%, 14%);
+    --color-button2: hsl(189, 100%, 14%);
     --color-button2-muted: hsl(189, 100%, 9%);
 }
 
@@ -29,10 +32,55 @@ p {
 
 .button1 {
     color: var(--color-text);
-    background-color: var(--color-button1) !important;
+    background-color: var(--color-button1);
+}
+
+.button1:hover {
+    color: var(--color-text);
+    background-color: var(--color-button1-muted);
 }
 
 .button2 {
     color: var(--color-text);
-    background-color: var(--color-button2) !important;
+    background-color: var(--color-button2);
 }
+
+.button2:hover {
+    color: var(--color-text);
+    background-color: var(--color-button2-muted);
+}
+
+body { 
+    font-family: "Sour Gummy", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Mountains of Christmas", serif;
+}
+
+/* home page specific styling */
+
+#role {
+display: flex;
+justify-content: space-around;
+gap: 20px;
+}
+
+#helper {
+    align-  
+}
+
+#wisher {
+    align-self: center;    
+}
+
+a #role {
+    align-self: center;
+}
+
+/* end of home page specific styling */
