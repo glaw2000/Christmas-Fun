@@ -1,5 +1,4 @@
 {% load static %}
-
 {% url 'landing' as landing_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
@@ -7,27 +6,39 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" type="image/png" href="/static/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Dear Santa">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <title>Dear Santa - A Christmas Wishlist</title>
 </head>
+
 <body>
 
-    
+
     {% if user.is_authenticated %}
-<li class="nav-item">
-	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-</li>
-{% else %}
-<li class="nav-item">
-	<a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-		href="{% url 'account_signup' %}">Register</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-</li>
-{% endif %}
+    <li class="nav-item">
+        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
+            href="{% url 'account_logout' %}">Logout</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+        <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+            href="{% url 'account_signup' %}">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
+            href="{% url 'account_login' %}">Login</a>
+    </li>
+    {% endif %}
 
 <main class="container flex-grow-1 mt-2 mb-2 py-4">
     {% block content %}
@@ -35,4 +46,5 @@
 </main>
 
 </body>
+
 </html>
