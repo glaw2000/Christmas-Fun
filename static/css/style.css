@@ -13,6 +13,10 @@
     --color-button2-muted: hsl(189, 100%, 9%);
 }
 
+body { 
+    font-family: "Sour Gummy", sans-serif;
+}
+
 main {
     background-color: var(--color-main);
 }
@@ -23,6 +27,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Mountains of Christmas", serif;
     color: var(--color-heading);
 }
 
@@ -30,6 +35,8 @@ p {
     color: var(--color-text);
 }
 
+
+/* button styling for index.html and naughty_nice.html */
 .button1 {
     color: var(--color-text);
     background-color: var(--color-button1);
@@ -50,15 +57,18 @@ p {
     background-color: var(--color-button2-muted);
 }
 
-body { 
-    font-family: "Sour Gummy", sans-serif;
+
+/* index.html specific styling */
+#role h1 {
+    text-align: center;
+}
+#helper {
+    background-color: var(--color-main);
+    text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Mountains of Christmas", serif;
+#wisher {
+    background-color: var(--color-main);
+    text-align: center;
 }
+  
