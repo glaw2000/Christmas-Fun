@@ -1,0 +1,10 @@
+:root {
+    --color-text: hsl(0, 0%, 100%);
+    --color-text-muted: hsl();
+    --color-background: hsl(201, 100%, 14%);
+    --color-background-muted: hsl(201, 100%, 9%);
+    --color-heading: hsl();
+    --color-heading-muted: hsl();
+    --color-accent: hsl();
+    --color-accent-muted: hsl();
+}
