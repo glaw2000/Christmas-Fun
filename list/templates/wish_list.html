@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>{{ wish_list_owner.username }}'s Wish List</h1>
+
+{% for wish in wishes %}
+    <div class="wish-item">
+        <p>{{ wish.wish_item }}</p>
+    </div>
+{% endfor %}
+
+<!-- Displaying coal button and coal count -->
+<div>
+    {% if user.is_authenticated %}
+        <i class="fa-solid fa-cubes fa-2x {% if user_has_coaled %}coaled{% endif %}" id="coal-button" style="cursor:pointer;" aria-label="coal selected" onclick="giveCoal({{ wish_list_owner.id }})"></i> 
+    {% else %}
+        <i class="fa-solid fa-cubes fa-2x" aria-label="coal not selected"></i>
+    {% endif %} 
+    <span id="coal-count">{{ total_coals }}</span>
+</div>
+
+<!-- Calling JS code for coal count feature -->
+{% csrf_token %}
+
+<script src="{% static 'js/coals.js' %}"></script>       
+<!-- End of call for JS code for coal count feature -->
+
+{% endblock content %}
