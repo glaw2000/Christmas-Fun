@@ -91,17 +91,23 @@ Initially my Profile and Article Page HTML were receiving [validator errors](#),
 
 ### Python Validation
 
-[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python files that were created or edited by myself. No issues presented and line lengths were double checked. I have included some screenshots with the results below.
+Python validation was performed using [CI Python Linter](https://pep8ci.herokuapp.com/#) 
 
-| Feature | admin.py | forms.py | models.py | urls.py | views.py |
-|---------|----------|----------|-----------|---------|----------|
-| Articles | [no errors](documentation/testing/art_admin.png) | [no errors](documentation/testing/art_forms.png) | [no errors](documentation/testing/art_models.png) | [no errors](documentation/testing/art_urls.png) | [no errors](documentation/testing/art_views.png) |
-| Booking  | [no errors](documentation/testing/book_admion.png) | [no errors](documentation/testing/book_forms.png) | [no errors](documentation/testing/book_models.png) | [no errors](documentation/testing/book_urls.png) | [no errors](documentation/testing/book_views.png) |
-| FreeFido main app | na | na | na | [no errors](documentation/testing/freefido_urls.png) | na |
-| Gallery | [no errors](documentation/testing/gallery_admin.png) | [no errors](documentation/testing/gallery_form.png) | [no errors](documentation/testing/gallery_models.png) | [no errors](documentation/testing/gallery_urls.png) | [no errors](documentation/testing/gallery_views.png) |
-| Home | na | na | na | [no errors](documentation/testing/home_urls.png) | [no errors](documentation/testing/home_views.png) |
-| Profiles | [no errors](documentation/testing/profile_admin.png) | [no errors](documentation/testing/profile_forms.png) | [no errors](documentation/testing/profile_models.png) | [no errors](documentation/testing/profile_urls.png) | [no errors](documentation/testing/profile_views.png) |
-| Visit | na | na | na | [no errors](documentation/testing/visit_urls.png) | [no errors](documentation/testing/visit_views.png) |
+All errors were rectified with the exception of a single overlength line in settings.py\
+This was confirmed as ok as part of settings.py files by cohort learning facilitator.
+
+| Feature | admin | apps | asgi | forms | models | settings | urls | views | wsgi |
+|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
+| Config | N/A | N/A | No Errors | N/A | N/A | E501 - Ovelength | No Errors | N/A | No Errors |
+| Landing | N/A | No Errors | N/A | N/A | N/A | N/A | No Errors | No Errors | N/A |
+| List | No Errors | No Errors | N/A | No Errors | No Errors | N/A | No Errors | No Errors | N/A |
+| Profiles | No Errors | No Errors | N/A | No Errors | No Errors | N/A | No Errors | No Errors | N/A |
+
+<details><summary>Python Validation Screenshots</summary>
+
+
+
+</details>
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>
@@ -110,7 +116,7 @@ Initially my Profile and Article Page HTML were receiving [validator errors](#),
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. External CSS for Bootstrap, provided by [CDN](https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css) was not tested. Warnings were present, these were related to my use of variables for colors and fonts in my CSS file.
 
-![css validation](documentation/testing/css_valid.png)
+
   
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>
