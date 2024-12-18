@@ -20,7 +20,9 @@
 <!-- Displaying coal button and coal count -->
 <div>
     {% if user.is_authenticated %}
-        <i class="fa-solid fa-cubes fa-2x {% if user_has_coaled %}coaled{% endif %}" id="coal-button" style="cursor:pointer;" aria-label="coal selected" onclick="giveCoal({{ wish_list_owner.id }})"></i> 
+        <i class="fa-solid fa-cubes fa-2x {% if user_has_coaled %}coaled{% endif %}" id="coal-button" 
+        style="cursor:pointer;" aria-label="coal selected" onclick="giveCoal(this)" 
+        data-user-id="{{ wish_list_owner.id }}"></i> 
     {% else %}
         <i class="fa-solid fa-cubes fa-2x" aria-label="coal not selected"></i>
     {% endif %} 
@@ -29,6 +31,11 @@
 
 <!-- Calling JS code for coal count feature -->
 {% csrf_token %}
+
+<script>
+    const userId = "{{ wish_list_owner.id }}"; 
+    const wishListId = "{{ data_wish_list_id }}";
+</script>
 
 <script src="{% static 'js/coals.js' %}"></script>       
 <!-- End of call for JS code for coal count feature -->
