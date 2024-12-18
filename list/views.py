@@ -7,7 +7,6 @@ from .models import WishList, Coal
 from django.contrib.auth.models import User
 from .forms import WishItemForm
 
-# Create your views here.
 
 class NiceList(ListView):
     """
@@ -19,6 +18,7 @@ class NiceList(ListView):
 
     def get_queryset(self):
         return User.objects.filter(is_active=True)
+
 
 def wish_list(request, pk):
     """
@@ -52,7 +52,8 @@ def add_wish_item(request, pk):
         form = WishItemForm(request.POST)
         if form.is_valid():
             new_item = form.cleaned_data['item']
-            wish_list, created = WishList.objects.get_or_create(fk_user_id=user)
+            wish_list,
+            created = WishList.objects.get_or_create(fk_user_id=user)
             if isinstance(wish_list.wish_item, list):
                 wish_list.wish_item.append(new_item)
             else:
@@ -62,8 +63,9 @@ def add_wish_item(request, pk):
             return redirect('wishes', pk=pk)
     else:
         form = WishItemForm()
-    
+
     return render(request, 'list/add_wish_item.html', {'form': form})
+
 
 @login_required
 def coal_wisher(request, pk):
@@ -72,17 +74,20 @@ def coal_wisher(request, pk):
     """
     user = get_object_or_404(User, pk=pk)
     wish_lists = WishList.objects.filter(fk_user_id=user)
-    
+
     coal, created = Coal.objects.get_or_create(
-        fk_wish_list_id=wish_lists.first(),  # We're using the first wish list as a representative for the entire list
+        fk_wish_list_id=wish_lists.first(),
         fk_user_id=request.user
     )
     if not created:
-        Coal.objects.filter(fk_wish_list_id__in=wish_lists, fk_user_id=request.user).delete()
+        Coal.objects.filter(
+            fk_wish_list_id__in=wish_lists,
+            fk_user_id=request.user
+        ).delete()
         coaled = False
     else:
         coaled = True
-    
+
     coals_count = Coal.objects.filter(fk_wish_list_id__in=wish_lists).count()
     return JsonResponse({
         'coaled': coaled,
