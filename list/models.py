@@ -8,10 +8,11 @@ class WishList(models.Model):
     """
     fk_user_id = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="wisher")
-    wish_item = models.TextField()
+    wish_item = models.JSONField()
 
     def __str__(self):
-        return f"{self.fk_user_id}'s wish: {self.wish_item[:50]}"
+        wishes = self.wish_item if isinstance(self.wish_item, list) else []
+        return f"{self.fk_user_id}'s wishes: {', '.join(wishes[:3])}"
     
 
 

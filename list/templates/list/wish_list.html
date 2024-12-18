@@ -6,9 +6,11 @@
 <h1>{{ wish_list_owner.username }}'s Wish List</h1>
 
 {% for wish in wishes %}
-    <div class="wish-item">
-        <p>{{ wish.wish_item }}</p>
-    </div>
+    <ul>
+    {% for item in wish.wish_item %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
 {% endfor %}
 
 <!-- Displaying coal button and coal count -->
