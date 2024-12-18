@@ -209,9 +209,9 @@ After ideation establish required prioritisation of tasks for **MVP** delivery.
 | #1 | As Santa I want to know what people want so that nice people get their wishes granted | 🟢 |
 | #2 | As a developer I want to create a visually attractive site so that people want to use it | 🟢 |
 | #3 | As a nice person I want to be able to add my wish list so that Santa knows which gifts to deliver | 🟢 |
-| #4 | As Santa I want to know who is naughty or nice so that I know who to give coal to | 🟠 |
-| #5 | As Santa's helper I want to let Santa know that a gift is already under the tree for a person so that it doesn't get duplicated  | 🟡 |
-| #6 | As Santa I want to know what gifts are already under the tree for a person so that I don't gift the same thing.  | 🟡 |
+| #4 | As Santa I want to know who is naughty or nice so that I know who to give coal to | 🟡 |
+| #5 | As Santa's helper I want to let Santa know that a gift is already under the tree for a person so that it doesn't get duplicated  | 🟠 |
+| #6 | As Santa I want to know what gifts are already under the tree for a person so that I don't gift the same thing.  | 🟠 |
 | #7 | As a Developer I want to provide search functionality so that it is easier for a user to find a gift recipient  | 🔴 |
 | #8 | As a nice person I want to be able to hide certain items on my wish list so that only certain people can see them | 🔴 |
 
