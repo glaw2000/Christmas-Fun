@@ -121,37 +121,6 @@ This was confirmed as ok as part of settings.py files by cohort learning facilit
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>
    
-### Lighthouse Scores
-
-Lighthouse testing was carried out in Incognito mode to acheive the best result. Performance was lower than preferred due to the site being image heavy. Images used in the sites design were saved in webp and png format, and compressed using [tinypng](https://tinypng.com/) and [Convertio](https://www.convertio.co) to offer the best chance for a decent performance score. The CDNs used for Bootstrap were also noted in the Lighthouse report as causing issue with performance. This report will be reviewed for future development of Freefido to raise this score.
-
-**Desktop**  
-
-![Lighthouse scores desktop](documentation/testing/desktop_lh.png)  
-*Desktop Home Page*  
-  
-![Lighthouse scores desktop](documentation/testing/dt_art_lh.png)  
-*Desktop Article Page*
-  
-**Mobile**  
-
-![Lighthouse scores mobile](documentation/testing/mobile_lh.png) 
-*Mobile Home Page*  
-  
-![Lighthouse scores mobile](documentation/testing/mob_art_lh.png) 
-*Mobile Article Page*
-  
-<p align="right"><a href="#">🔺 Back To Top</a></p>
-<hr> 
-
-### Wave Accessibility Evaluation
-
-![WAVE Web Accessibility Evaluation Tools](documentation/testing/wave_report.png)  
-
-
-<p align="right"><a href="#">🔺 Back To Top</a></p>
-<hr> 
-
 ## Manual Testing
 
 ### User Input/Form Validation
@@ -160,24 +129,24 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 
 | Feature | Tested? | User Input Required | User Feedback Provided | Pass/Fail | Fix |
 | :--: | -- | -- | -- | :--: | --: |
-| Navbar Logo and Icons | | Click | Logo takes user to 'Home', icons take user to intended location. Tooltips used in desktop/mobile view to provide accessibility and further information about the icons purpose and intention |  | - |
-| Santa's Helper button |  | Click  | When user clicks on the "Santa's helper? Click here" button from the home page they are taken to Santa's "Nice List" where a list of names can be seen |  |  |
-| Santa's Helper view Wish List |  | Click | When user clicks on a name from the "Nice List" the "Wish List" for that person is presented in a new screen |  |  |
-| Marking coal on someone's Wish List |  | Click | Santa's helper can click on coal icon at bottom of a person's wish list. Coal icon darkens and coal count for that person increments by 1 for all to see |  |  |
-| Deselecting coal on someone's Wish List |  | Click | Santa's helper can click on pre-selected coal icon at bottom of a person's wish list. Coal icon lightens and coal count for that person decrements by 1 for all to see |  |  |
-| Send a Wish |  | Click | When user clicks on "Send a wish to Santa" button from the home page they are taken to a page with two buttons asking them if they are Naughty or Nice |  |  |
-| Naughty button |  | Click | When user selects "Naughty" from the eligibility screen they are presented with a verification screen checking if they are sure they want coal for Christmas with "Yes" and "No" buttons to choose from |  |  |
-| Confirm Naughty |  | Click | When user confirms "Yes" they are naughty, user is presented with a screen of coal |  |  |
-| Don't confirm Naughty |  | Click | When user confirms "No" they are not naughty, user is presented with screen asking them to register to create their wish list |  |  |
-| Nice button |  | Click | When user selects "Nice" from the eligibility screen they are presented with screen asking them to register to create their wish list |  |  |
-| Register | | Register form | Upon registering user is presented with their own wish list page |  |  |
-| Add wish |  | Text | Registered user can add wish to their own wish list which can be viewed by anyone |  |  |
-| Edit wish |  | Text | Registered user can edit items on their own wish list |  |  |
-| Delete wish |  |  | Registered user can delete items on their own wish list |  |  |
-| Log Out |  | Click | Registered user is presented with "Are you sure..." check | | |  
-| Log In |  | Click | Registered user is presented with Login screen, which upon completing, they are taken to their own wish list page |  |  |
-| Admin - Add User |  |  | When a user is added via the admin dashboard ensure that they can log in from the application's front end |  |  |
-| Admin - Delete User |  |  | When a user is deleted via the admin dashboard ensure that they no longer appear on the "Nice List" , can no longer login and no longer have a "Wish List" stored |  |  |
+| Navbar Logo and Icons | | Click | Logo takes user to 'Home', icons take user to intended location. | Pass  | - |
+| Santa's Helper button |  | Click  | When user clicks on the "Santa's helper? Click here" button from the home page they are taken to Santa's "Nice List" where a list of names can be seen | Pass |  |
+| Santa's Helper view Wish List |  | Click | When user clicks on a name from the "Nice List" the "Wish List" for that person is presented in a new screen | Pass |  |
+| Marking coal on someone's Wish List |  | Click | Santa's helper can click on coal icon at bottom of a person's wish list. Coal icon darkens and coal count for that person increments by 1 for all to see | Pass  |  |
+| Deselecting coal on someone's Wish List |  | Click | Santa's helper can click on pre-selected coal icon at bottom of a person's wish list. Coal icon lightens and coal count for that person decrements by 1 for all to see | Fail | Color needs styling to update on click |
+| Send a Wish |  | Click | When user clicks on "Send a wish to Santa" button from the home page they are taken to a page with two buttons asking them if they are Naughty or Nice | Pass  |  |
+| Naughty button |  | Click | When user selects "Naughty" from the eligibility screen they are presented with a verification screen checking if they are sure they want coal for Christmas with "Yes" and "No" buttons to choose from | N/A | Feature not deployed |
+| Confirm Naughty |  | Click | When user confirms "Yes" they are naughty, user is presented with a screen of coal | Pass  |  |
+| Don't confirm Naughty |  | Click | When user confirms "No" they are not naughty, user is presented with screen asking them to register to create their wish list | N/A |  |
+| Nice button |  | Click | When user selects "Nice" from the eligibility screen they are presented with screen asking them to register to create their wish list | Pass |  |
+| Register | | Register form | Upon registering user is presented with their own wish list page | Fail | Implemented to return to home-page instead |
+| Add wish |  | Text | Registered user can add wish to their own wish list which can be viewed by anyone | Pass |  |
+| Edit wish |  | Text | Registered user can edit items on their own wish list | N/A | Edit functionality not implemented on front end, admin dashboard only |
+| Delete wish |  |  | Registered user can delete items on their own wish list | Fail  | Delete functionality not implemented on front end, admin dashboard only |
+| Log Out |  | Click | Registered user is presented with "Are you sure..." check | Pass | |  
+| Log In |  | Click | Registered user is presented with Login screen, which upon completing, they are taken to their own wish list page | Fail | Implemented to go to home page instead |
+| Admin - Add User |  |  | When a user is added via the admin dashboard ensure that they can log in from the application's front end | Pass |  |
+| Admin - Delete User |  |  | When a user is deleted via the admin dashboard ensure that they no longer appear on the "Nice List" , can no longer login and no longer have a "Wish List" stored | Pass |  |
 
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
@@ -185,37 +154,22 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 
 ### Browser Compatibility
 
-Freefido was tested on the following browsers, new users were created, old users data edited and all features were tested:
+Dear Santa was tested on the following browsers:
 
-- Chrome v114.0.5735.199
-- Firefox v114.0.2
-- Edge v114.0.1823.79
-- Safari v16.5.1
-
-| Browser | Issue | Functionality |
-|---------|-------|---------------|
-| FireFox | Profile Edit/Upload Image - File input 'Browse' Button centered in input field | Button works as expected |
-| FireFox | Profile Dashboard - scrollbars following Mozilla styling | No issue |
-| Safari  | Scrollbars following Safari styling | No issue |
+- Chrome - no issues
+- Firefox - no issues
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>
 
 ### Testing User Stories
 
-User Stories are documented in the FreeFido [GitHub Projects Board](https://github.com/users/amylour/projects/4). User Stories are numbered, with Acceptance Criteria and Tasks detailed within. Testing was carried out on Dev Tools for desktop/tablet/mobile, by creating multiple accounts for test users: FidoTest1, FidoTest2, FidoTest3 etc and following through by ensuring that the Acceptance Criteria were met. All features were tested to ensure that they provided the user with the expected output and action.
+User Stories are documented in the Dear Santa [GitHub Projects Board](https://github.com/glaw2000/Christmas-Fun). U
 
-
-| User Story | Acceptance Criteria Met? | Tested | Response | Pass/Fail | Fix |
-| :--: | -- | -- | -- | :--: | --: |
-| [No.](Link) | Yes | Yes | No issues| Pass | - |
-
-<p align="right"><a href="#">🔺 Back To Top</a></p>
-<hr>
   
 ### Dev Tools/Real World Device Testing
 
-Responsiveness testing was carried out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices. Occassionally I would have to refresh the page by clicking the 'FreeFido' logo as the page would load zoomed in or out on the simualted device. When refreshed and CSS checked the desired outcome was observed. I put this down to a caching issue in Chrome as this issue was not observed when testing on the available real world devices.
+Responsiveness testing was carried out using Google Dev Tools. Responsiveness was evident on all features throughout. 
 
 ## Virtual Test Environment
 
@@ -232,34 +186,6 @@ Using [statcounter](https://gs.statcounter.com/screen-resolution-stats) to attai
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>
-
-**Dev Tools Device Testing - all features tested, issues noted below**
-| Device  | Feature    | Issue  | Fix  |
-| ------- | ---------- | ------ |------|
-| iPhone 4 | Messages | Text overlap with 'x' close button, article image squashed | Separate media query created for screens max-width: 350px to cope with iPhone4 320px screen width, message font size reduced, article image size reduced |
-| iPhone12 Pro | All features | No issues | None needed |
-| Samsung Galaxy A51 | All features | No issues | None needed |
-| iPad Pro | All features | No issues | None needed |
-   
-  
-**Real World Device Testing**
-| Device      | Feature    | Issue  | Fix  | 
-| ------------| ---------- | ------ |------|
-| OPPO Reno 8 Lite |   All features    | No issues | None needed |
-| iPhone XR | All features |  No issues  | None needed |
-| iPhone 12  | All features | No issues | None needed |
-| iPad Pro 2021 |    All features      |    No issues    |  None needed |
-| Acer Aspire 3 2019 laptop | All features | No issues | None needed |
-
-
-## Bugs  
-  
-As this was my first Django/Database project, most of the bugs that I encountered were learning and teething issues.\
-The below bugs are bugs that I spent a longer length of time investigating or required the assistance of Tutor Support.
-
-| No. | Bug | Solved | Fix | Solution Credit | Commit no. |
-| :--: | :--: | :--: | :-- | :-- | --: |
-| 1   | # | # | # | [Credited Source](Link) | [######](Link) |
 
 ### Known Bugs
 
