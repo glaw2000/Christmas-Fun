@@ -96,8 +96,8 @@ def coal_wisher(request, pk):
     )
 
     if not created:
-        # If it already exists, delete all coals for this user in the user's wish lists
-        Coal.objects.filter(fk_wish_list_id__in=wish_lists, fk_user_id=request.user).delete()
+        # If it already exists, delete the coal instance
+        coal.delete()
         coaled = False
     else:
         coaled = True
