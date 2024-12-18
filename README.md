@@ -81,25 +81,19 @@ The application is called Dear Santa and is aimed at everybody that celebrates C
 
 ## UX - User Experience
 
-Provide detail about the UX principles employed within the _project_ and describe how they have been implemented in order to improve user experience. 
-
 ### Design Ideation
 
-Expanding upon the UX section above, describe how these best practices were combined with inspiration to be effectively implemented into the design of the final _project_.
+Taking the theme of Christmas we opted to develop an app that allowed users to send a wishlist to Santa.
 
-Reference any specific inspirations that heavily influenced this process.
+Using the team name as inspiration we sought out images, and inspiration including Gonks and Christmas related items. 
 
 <p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Colors
 
-Description and reasoning for the colors selected as part of the _project_ as well as any additional details.
-
-Repeat for additional palettes that may be included as part of light / dark mode or alternate themes.
+Our color palette was inspired by the Christmas theme and taken directly from the images used as our main inspiration [imagery](#imagery).
 
 ### Color Palette
-
-![Color Swatch](documentation/images/Placeholder.png)
 
 Explain the naming convention used for the project to aid with clean maintainable code.
 
@@ -157,20 +151,10 @@ The image below was used as the initial starting point for the favicon and banne
 
 ## Strategy Plane
 
-This _README Template_ provides the essential information necessary for documenting the _project_.\
-This includes file & folder structure, basic placeholder information such as section headings, images, text, tables and shield buttons with links to common resources.
-
-Once implemented the _README Template_ can be easily amended to suit the _project_ needs.
-
-_Project Name_ was developed with the intention of - provide description of the project and scope expanding upon the introduction summary and lead into the key objectives listed below.
-
 ### Key Objectives
 
 A brief bullet point list of the key objectives for _Project Name_.\
 This could include _learning outcomes_, _stakeholder requirements_, _personal goals_ and more.
-
-- Fulfil the primary [Learning Objectives](#) as defined by _Code Institute_.
-- Objective 2
 
 <p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
@@ -286,19 +270,6 @@ Reference all implementations for front end and back end to project all users an
 
 This section should be used to showcase the features of the final _project_.
 
-### Feature - Example
-
-This heading provides an overview of a general feature group, providing context and description.
-
-<details>
-<summary>Specific Feature</summary>
-
-Include detail about the specific feature, purpose and implementation.
-
-Add screenshots where appropriate.
-![Feature](documentation/images/Placeholder.png)
-
-</details>
 
 <p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
@@ -309,7 +280,9 @@ These could be outstanding issues, or new ideas that developed over the course o
 
 | Title | Description |
 |:-:|:-|
-| Feature | A desirable feature to be included in future scope implementation |
+| Search Bar | A search bar to allow users to quickly locate wishlists for users easily |
+| Checklist | Added functionality to identify whether a gift has been bought already | 
+| Private Lists | Ability to flag items as private with password protection |
 
 <p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
