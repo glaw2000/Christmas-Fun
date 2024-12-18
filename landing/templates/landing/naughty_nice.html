@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row" id="role">
+
+    <h1 class="mb-5 text-center">Have You Been Naughty or Nice This Year</h1>
+    
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card h-100">
+            <div class="card-body d-flex flex-column" id="helper">
+                <h2 my-3>Naughty</h2>
+                <p class="card-text flex-grow-1">
+                </p>
+                <a href="{% url 'coal' %}" role="button" class="btn button1" aria-label="Select Naughty">Click Here</a>
+            </div>
+        </div>
+    </div>
+        
+    <div class="col-sm-6">
+        <div class="card h-100">
+            <div class="card-body d-flex flex-column" id="wisher">
+                <h2 my-3>Nice</h2>
+                <p class="card-text flex-grow-1">           
+                </p>
+                {% if user.id is not None %}
+                    <a href="{% url 'wishes' pk=user.id %}" role="button" class="btn button2" aria-label="Select Nice">Click Here</a>
+                <!-- add elseif sign in page if user is not signed in -->
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
