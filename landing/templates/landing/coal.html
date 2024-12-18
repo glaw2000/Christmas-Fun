@@ -3,8 +3,23 @@
 
 {% block content %}
 
-<h1>Santa Gifts you Coal this year</h1>
-<img class="py-3" src="{% static 'images/coal.webp' %}" alt="A lump of coal">
+<!-- <h1>Santa Gifts you Coal this year</h1>
+<img class="py-3" src="{% static 'images/coal.webp' %}" alt="A lump of coal"> -->
+
+
+<div class="container d-flex justify-content-center">
+    <div class="col-4">
+        <div class="row">
+            <h1 class="text-center">Santa Gifts you Coal this year</h1>
+        </div>
+        <div class="row">
+            <img class="py-3 coal-img" src="{% static 'images/coal.webp' %}" alt="A lump of coal">
+        </div>
+        <div class="row">
+            <a href="{% url 'home' %}" id="help_btn" role="button" class="btn button1">Home</a>
+        </div>
+    </div>
+</div>
 
 
 {% endblock content %}
