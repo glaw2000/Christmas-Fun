@@ -17,6 +17,9 @@ class NiceList(ListView):
     template_name = 'list/nice_list.html'
     context_object_name = 'users'
 
+    def get_queryset(self):
+        return User.objects.filter(is_active=True)
+
 def wish_list(request, pk):
     """
     Display the wish list for a specific user
