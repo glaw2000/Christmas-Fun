@@ -263,7 +263,7 @@ The below bugs are bugs that I spent a longer length of time investigating or re
 
 ### Known Bugs
 
-- Detail known bugs that have yet to be rectified. 
+- Footer responsivity - requires media qeury to remove images upon reduction to smaller screens
 
 <p align="right"><a href="#">🔺 Back To Top</a></p>
 <hr>

@@ -12,26 +12,24 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page"
-                  href="">Wish List</a>
+              {% if user.id is not None %}
+              <a href="{% url 'wishes' pk=user.id %}" role="button" class="btn button2" aria-label="Select Nice">Wish List</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" role="button" class="btn button2" aria-label="Select Nice">Sign Up</a>
+              {% endif %}
               </li>
           </li>
         </ul>
         <div class="navbar-text">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             {% if user.is_authenticated %}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img id="nav-user-img" src="{{ user.profile.get_image_url }}" class="img-fluid mx-auto d-block"
-                  alt="{{ user.profile.get_display_name }}">
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link {% if request.path == profile_url %}active{% endif %}" aria-current="page"
-                    href="{% url 'profile' %}">Profile</a></li>
-                <li><a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                    href="{% url 'account_logout' %}">Sign Out</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
+                href="{% url 'profile' %}">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-alt {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                href="{% url 'account_logout' %}">Sign Out</a>
             </li>
             {% else %}
             <li class="nav-item">
