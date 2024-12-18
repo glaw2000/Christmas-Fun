@@ -2,8 +2,8 @@
 ![Dear Santa](static/images/project-banner.webp)
 
 <p align="center">
-| <a href="#">Live Project</a> |
-  <a href="#">Admin Panel</a> |
+| <a href="https://dear-santa-5090fb3ae7a1.herokuapp.com/">Live Project</a> |
+  <a href="https://dear-santa-5090fb3ae7a1.herokuapp.com/admin">Admin Panel</a> |
   <a href="https://github.com/users/glaw2000/projects/3">Project Board</a> |
 </p>
 
@@ -41,8 +41,6 @@ The application is called Dear Santa and is aimed at everybody that celebrates C
   
   - [Skeleton Plane](#skeleton-plane)
     - [Wireframes](#wireframes)
-        - [Low Fidelity](#low-fidelity)
-        - [High Fidelity](#high-fidelity)
 
   - [Surface Plane](#surface-plane)
     
@@ -79,7 +77,7 @@ The application is called Dear Santa and is aimed at everybody that celebrates C
   - [Acknowledgements](#acknowledgements)
   - [Appendices](#appendices)
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## UX - User Experience
 
@@ -91,7 +89,7 @@ Expanding upon the UX section above, describe how these best practices were comb
 
 Reference any specific inspirations that heavily influenced this process.
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Colors
 
@@ -124,8 +122,6 @@ Potential tools for contrast compliance checks.
 - [WebAIM](https://webaim.org/resources/contrastchecker/)
 - [Adobe](https://color.adobe.com/create/color-contrast-analyzer)
 
-![Contrast GIF](documentation/images/Placeholder.png)
-
 ### Color Contrast Score Table
 
 | | 1 | 2 | 3 | 4 | 5 | 6 |
@@ -137,24 +133,17 @@ Potential tools for contrast compliance checks.
 | **5** | 🟠[3.9:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=222222) | 🟠[3.48:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=002E46) | 🔴[1.21:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=008060) | 🟠[3.18:1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=ADF0EB) | - | 🟠[4.07.1](https://webaim.org/resources/contrastchecker/?fcolor=FB032F&bcolor=FFFFFF) |
 | **6** | 🟢[15.9:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=222222) | 🟢[14.19:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=002E46) | 🟡[4.93:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=008060) | 🔴[1.27:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=ADF0EB) | 🟠[4.07:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=FB032F) | - |
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Typefaces
 
 Describe the selection process and reasoning behind the typefaces used in the _project_.\
 Identify any specific requirements, inspirations or difficulties faced. 
 
-[Primary](https://fonts.google.com/) - Default typeface, a reflection of brand identity.\
-[Secondary](https://fonts.google.com/) - Complementary to the main typeface.\
-[Tertiary](https://fonts.google.com/) - Used for accents.
+[Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas) - Default typeface with a Christmas style.\
+[Sour Gummy](https://fonts.google.com/specimen/Sour+Gummy) - Complementary to the main typeface for ease of reading.\
 
-Alternate typefaces may also be included as part of additional themes or accessibility features.
-
-### Font Usage
-
-Specific reference to font usage would include decisions that influence accompanying CSS for the _project_
-
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Imagery
 
@@ -164,7 +153,7 @@ The image below was used as the initial starting point for the favicon and banne
 
 ![Santa's Elves](<static/images/Santa's Elves.png>)
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Strategy Plane
 
@@ -183,11 +172,11 @@ This could include _learning outcomes_, _stakeholder requirements_, _personal go
 - Fulfil the primary [Learning Objectives](#) as defined by _Code Institute_.
 - Objective 2
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Agile Methodologies
 
-Agile Methodologies were followed and implemented via [GitHub Project](link)
+Agile Methodologies were followed and implemented via [GitHub Project](https://github.com/users/glaw2000/projects/3)
 
 Buttons display current status of project issues using GitHub purple and green\
 Ensure you update the `user/repo` in both the button and link
@@ -211,22 +200,9 @@ After ideation establish required prioritisation of tasks for **MVP** delivery.
 
 </details>
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
-
-### Sprint Cycle
-
-| No. | Objective | Start | End |
-|:-:|:-|:-:|:-:|
-| #1 | Intended Objective | YYYY-MM-DD | YYYY-MM-DD |
-| #2 | Intended Objective | YYYY-MM-DD | YYYY-MM-DD |
-
-Dates formatted to [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
-
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## User Stories
-
-### Epic - 
 
 | ID | User Story | MoSCoW |
 |:-:|:-|:-:|
@@ -240,27 +216,50 @@ Dates formatted to [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.
 | #8 | As a nice person I want to be able to hide certain items on my wish list so that only certain people can see them | 🔴 |
 
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Scope Plane
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Structure Plane
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Skeleton Plane
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ### Wireframes
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+**Landing**
+![Landing Page](static/images/wireframes/landing.png)
+
+**Wish List**
+![Wish List](static/images/wireframes/wish-list.png)
+
+**Wish List User**
+![Wish List User](static/images/wireframes/wish-list-user.png)
+
+**Coal**
+![Coal](static/images/wireframes/coal.png)
+
+**Naughty or Nice**
+![Naughty-Nice](static/images/wireframes/naughty-nice.png)
+
+**Naughty Confirm**
+![Naughty Confirm](static/images/wireframes/naughty-confirm.png)
+
+**Profile**
+![Profile](static/images/wireframes/profile.png)
+
+
+
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Surface Plane
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Database Schema
 
@@ -268,7 +267,7 @@ Provide a full breakdown of the _project_ database including the entity relation
 
 ![ERD](<static/images/ERD Dear Santa.webp>)
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Security
 
@@ -281,7 +280,7 @@ Reference all implementations for front end and back end to project all users an
 
 ### CSFR Tokens
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Features
 
@@ -301,7 +300,7 @@ Add screenshots where appropriate.
 
 </details>
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Future Scope & Features
 
@@ -312,7 +311,7 @@ These could be outstanding issues, or new ideas that developed over the course o
 |:-:|:-|
 | Feature | A desirable feature to be included in future scope implementation |
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Built With
 
@@ -333,7 +332,6 @@ These could be outstanding issues, or new ideas that developed over the course o
 ![Static Badge](https://img.shields.io/badge/Font_Awesome-Icons-grey?logo=fontawesome&logoColor=%23ffffff&color=%23538DD7)
 
 [![Static Badge](https://img.shields.io/badge/Code_Institute-Template-grey?logo=okta&logoColor=%23ffffff&color=%23ff6400)](https://github.com/Code-Institute-Org/ci-full-template)
-[![Static Badge](https://img.shields.io/badge/Code_Institute-Form_Dump-grey?logo=okta&logoColor=%23ffffff&color=%23ff6400)](https://formdump.codeinstitute.net/)
 
 [![Static Badge](https://img.shields.io/badge/AllAuth-v0.57.2-grey?logo=django&logoColor=%23ffffff&color=%23092E20)](https://allauth.org/)
 [![Static Badge](https://img.shields.io/badge/SummerNote-v0.8.20.0-grey?logo=django&logoColor=%23ffffff&color=%23092E20)](https://summernote.org/)
@@ -355,7 +353,6 @@ These could be outstanding issues, or new ideas that developed over the course o
 [![Static Badge](https://img.shields.io/badge/Slack-Messaging-grey?logo=slack&logoColor=%23ffffff&color=%234A154B)](https://slack.com)
 
 [![Static Badge](https://img.shields.io/badge/Affinity-Photo_2-grey?logo=affinityphoto&logoColor=%23ffffff&color=%234E3188)](https://affinity.serif.com/en-gb/)
-[![Static Badge](https://img.shields.io/badge/Affinity-Designer_2-grey?logo=affinitydesigner&logoColor=%23ffffff&color=%23134881)](https://affinity.serif.com/en-gb/)
 [![Static Badge](https://img.shields.io/badge/Figma-UI3-grey?logo=figma&logoColor=%23ffffff&color=%23F24E1E)](https://www.figma.com/release-notes/)
 
 [![Static Badge](https://img.shields.io/badge/W3C-HTML_Validation-grey?logo=&logoColor=%23ffffff&color=%23365d95)](https://validator.w3.org/)
@@ -364,33 +361,100 @@ These could be outstanding issues, or new ideas that developed over the course o
 [![Static Badge](https://img.shields.io/badge/JSHint-v2.13.6-grey?logo=javascript&logoColor=%23ffffff&color=%231d1e1c)](https://jshint.com/)
 [![Static Badge](https://img.shields.io/badge/Lighthouse-Testing-grey?logo=lighthouse&logoColor=%23ffffff&color=%23F44B21)](https://obsidian.md)
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Deployment
 
-Include detailed deployment instructions for each stage of the process involved in launching the project. 
+### Connecting to GitHub  
 
-## GitHub
+To begin this project from scratch, you must first create a new GitHub repository using the [Code Institute's Template](https://github.com/Code-Institute-Org/ci-full-template). This template provides the relevant tools to get you started. To use this template:
 
-### Repo Deployment
+1. Log in to [GitHub](https://github.com/) or create a new account.
+2. Navigate to the above CI Full Template.
+3. Click '**Use this template**' -> '**Create a new repository**'.
+4. Choose a new repository name and click '**Create repository from template**'.
+5. In your new repository space, click the purple CodeAnywhere (if this is your IDE of choice) button to generate a new workspace.
 
-### Fork Repo
+## Django Project Setup
 
-### Clone Repo
+1. Install Django and supporting libraries: 
+   
+- ```pip3 install 'django<4' gunicorn```
+- ```pip3 install dj_database_url psycopg2```
+- ```pip3 install dj3-cloudinary-storage```  
+  
+2. Once you have installed any relevant dependencies or libraries, such as the ones listed above, it is important to create a **requirements.txt** file and add all installed libraries to it with the ```pip3 freeze --local > requirements.txt``` command in the terminal.  
+3. Create a new Django project in the terminal ```django-admin startproject config .```
+4. Create a new app eg. ```python3 mangage.py startapp blog```
+5. Add this to list of **INSTALLED_APPS** in **settings.py** - 'blog',
+6. Create a superuser for the project to allow Admin access and enter credentials: ```python3 manage.py createsuperuser```
+7. Migrate the changes with commands: ```python3 manage.py migrate```
+8. An **env.py** file must be created to store all protected data such as the **DATABASE_URL** and **SECRET_KEY**. These may be called upon in your project's **settings.py** file along with your Database configurations. The **env.py** file must be added to your **gitignore** file so that your important, protected information is not pushed to public viewing on GitHub. For adding to **env.py**:
 
-<p align="right"><a href="#">🔺 Back To Top</a></p><hr>
+- ```import os```
+- ```os.environ["DATABASE_URL"]="<copiedURLfromPostgreSQL>"```
+- ```os.environ["SECRET_KEY"]="my_super^secret@key"```
+  
+For adding to **settings.py**:
 
-### Django
+- ```import os```
+- ```import dj_database_url```
+- ```if os.path.exists("env.py"):```
+- ```import env```
+- ```SECRET_KEY = os.environ.get('SECRET_KEY')``` (actual key hidden within env.py)  
 
-<p align="right"><a href="#">🔺 Back To Top</a></p><hr>
+9. Replace **DATABASES** with:
+
+```
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }
+```
+
+10. Set up the templates directory in **settings.py**:
+- Under ``BASE_DIR`` enter ``TEMPLATES_DIR = os.path.join(BASE_DIR, ‘templates’)``
+- Update ``TEMPLATES = 'DIRS': [TEMPLATES_DIR]`` with:
+
+```
+os.path.join(BASE_DIR, 'templates'),
+os.path.join(BASE_DIR, 'templates', 'allauth')
+```
+
+- Create the media, static and templates directories in top level of project file in IDE workspace.
+
+11. A **Procfile** must be created within the project repo for Heroku deployment with the following placed within it: ```web: gunicorn config.wsgi```
+12. Make the necessary migrations again.
 
 ### PostgreSQL
 
-<p align="right"><a href="#">🔺 Back To Top</a></p><hr>
+As a Code Institue student, a new database instance can be created on PostgreSQL from Code Institute. 
 
-### Heroku
+- Enter CodeInstitute student email address and submit
+- Retrieve the database URL value from the email generated
+- Place the value within your **DATABASE_URL**  in your **env.py** file and follow the below instructions to place it in your Heroku Config Vars.
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+
+### Heroku deployment
+
+To start the deployment process , please follow the below steps:
+
+1. Log in to [Heroku](https://id.heroku.com/login) or create an account if you are a new user.
+2. Once logged in, in the Heroku Dashboard, navigate to the '**New**' button in the top, right corner, and select '**Create New App**'.
+3. Enter an app name and choose your region. Click '**Create App**'. 
+4. In the Deploy tab, click on the '**Settings**', reach the '**Config Vars**' section and click on '**Reveal Config Vars**'. Here you will enter KEY:VALUE pairs for the app to run successfully. The KEY:VALUE pairs that you will need are your: 
+   
+   - **CLOUDINARY_URL**: **cloudinary://....** 
+   - **DATABASE_URL**:**postgres://...** 
+   - **DISABLE_COLLECTSTATIC** of value '1' (N.B Remove this Config Var before deployment),
+   - **SECRET_KEY** and value  
+  
+5. Add the Heroku host name into **ALLOWED_HOSTS** in your projects **settings.py file** -> ```'8000-glaw2000-christmasfun-z7df0l0i75y.ws.codeinstitute-ide.net', '8000-glaw2000-christmasfun-3u3yj5rv7w3.ws.codeinstitute-ide.net', '.herokuapp.com'```
+6. Once you are sure that you have set up the required files including your requirements.txt and Procfile, you have ensured that **DEBUG=False**, save your project, add the files, commit for initial deployment and push the data to GitHub.
+7. Go to the '**Deploy**' tab and choose GitHub as the Deployment method.
+8. Search for the repository name, select the branch that you would like to build from, and connect it via the '**Connect**' button.
+9.  Choose '**Manual**' deployment method and click '**Deploy Branch**'.
+10. Once the waiting period for the app to build has finished, click the '**View**' link to bring you to your newly deployed site. If you receive any errors, Heroku will display a reason in the app build log for you to investigate. **DISABLE_COLLECTSTATIC**  may be removed from the Config Vars once you have saved and pushed an image within your project.
+
 
 
 ## Testing
@@ -411,42 +475,42 @@ Describe the testing process, include screenshots of results and any detail erro
 
 - [Lighthouse Audit](https://developer.chrome.com/docs/lighthouse/overview)
 
-<p align="right"><a href="#">🔺 Back To Top</a></p>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
 
 ## Credits
 
 ### Code
 
-Provide reference to all sources used for coding the project, including sources used as part of debugging. 
-
 **General Resources / Learning**
 
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Code Institute - LMS](https://codeinstitute.net/)
+- [Django Docs](https://docs.djangoproject.com/en/5.1/)
 - [W3Schools](https://www.w3schools.com/)
-- 
 
 **Specific Code Used Within Project**
 
--
+- [Favicon Generator](https://favicon.io/favicon-converter/) - Converting Gonk image to favicon pack
+- [Perplexity AI](https://www.perplexity.ai/) - Used for assistance with debugging
+- [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) - Scroll to top
 
 ### Media
 
-Generic source accreditation with specific [Media Credits](#) included in an appendix document. 
+Media credits and tools used for media editing
 
-- [Source](#) - Media Sources Requiring General Credit
+- [Freepik](https://www.freepik.com/serie/19507053) - Flat Christmas character, element and template set
+- [Freepik](https://www.freepik.com/free-vector/coal-icons-collection_1065769.htm#fromView=search&page=1&position=6&uuid=e5a87947-ea25-443d-9ee0-a752d6d50754) - Coal
+
 
 ### Appendices
 
 All additional documentation included as part of the project.\
 Listed alphabetically. 
 
-- [Additional Research](#)
-- [Media Credits](#)
-- [Testing & Validation](#) 
-- [Wireframes](#)
+- [Testing & Validation](docs/testing.md)
 
 ### Acknowledgements
 
 Space to thank those that helped with the projects both directly and indirectly. 
 
-<p align="right"><a href="#">🔺 Back To Top</a></p><hr>
+<p align="right"><a href="#dear-santa">🔺 Back To Top</a></p>
