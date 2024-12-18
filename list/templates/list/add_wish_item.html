@@ -2,10 +2,12 @@
 
 {% block content %}
 <h2>Add a Wish Item</h2>
-<form method="post">
+<form method="POST" action="{% url 'add_wish_item' pk=wish_list_owner.id %}">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form.as_p }}  <!-- Renders the form fields -->
     <button type="submit">Add Item</button>
 </form>
 <a href="{% url 'wishes' pk=user.pk %}">Back to Wish List</a>
+
+{% csrf_token %}
 {% endblock %}
