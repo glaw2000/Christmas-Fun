@@ -37,7 +37,7 @@ ALLOWED_HOSTS = [
     '.herokuapp.com'
 ]
 
-CSRF_TRUSTED_ORIGINS =  [
+CSRF_TRUSTED_ORIGINS = [
     'https://*.codeinstitute-ide.net',
     'https://*.herokuapp.com'
 ]
@@ -112,7 +112,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default':
-    dj_database_url.parse(os.environ.get("DATABASE_URL"))        
+    dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
@@ -120,16 +120,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
@@ -143,7 +147,6 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
 
 
 # Static files (CSS, JavaScript, Images)

@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
+
 class WishList(models.Model):
     """
 
@@ -13,7 +13,6 @@ class WishList(models.Model):
     def __str__(self):
         wishes = self.wish_item if isinstance(self.wish_item, list) else []
         return f"{self.fk_user_id}'s wishes: {', '.join(wishes[:3])}"
-    
 
 
 class Coal(models.Model):

@@ -3,6 +3,7 @@ from .models import Profile
 from .forms import ProfileForm
 from django.contrib.auth.decorators import login_required
 
+
 @login_required
 def edit_profile(request):
     profile, created = Profile.objects.get_or_create(user=request.user)
@@ -17,6 +18,7 @@ def edit_profile(request):
         form = ProfileForm(instance=profile)
 
     return render(request, 'edit_profile.html', {'form': form})
+
 
 @login_required
 def profile_view(request):

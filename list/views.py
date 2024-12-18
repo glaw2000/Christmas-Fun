@@ -7,7 +7,6 @@ from .models import WishList, Coal
 from django.contrib.auth.models import User
 from .forms import WishItemForm
 
-# Create your views here.
 
 class NiceList(ListView):
     """
@@ -19,6 +18,7 @@ class NiceList(ListView):
 
     def get_queryset(self):
         return User.objects.filter(is_active=True)
+
 
 def wish_list(request, pk):
     """
@@ -72,6 +72,7 @@ def add_wish_item(request, pk):
         form = WishItemForm()
 
     return render(request, 'list/add_wish_item.html', {'form': form, 'wish_list_owner': user})
+
 
 @login_required
 def coal_wisher(request, pk):
