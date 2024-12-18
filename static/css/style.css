@@ -68,6 +68,12 @@ p {
   background-color: var(--color-primary);
 }
 
+/* Nice List */
+#nice a{
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
 
 /* Footer */
 footer {

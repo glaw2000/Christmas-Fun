@@ -4,11 +4,11 @@
 {% block content %}
 <h1>Santa's Nice List</h1>
 
-<ul>
+<ul id="nice">
     {% for user in users %}
         {% if user.is_authenticated %}
             <li>
-                <a href="{% url 'wishes' pk=user.pk %}">{{ user.username }}'s Wish List</a>
+                <a href="{% url 'wishes' pk=user.pk %}">Click here for {{ user.username }}'s Wish List</a>
             </li>
         {% endif %}
     {% endfor %}
