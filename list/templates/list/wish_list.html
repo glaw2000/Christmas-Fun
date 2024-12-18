@@ -5,6 +5,10 @@
 
 <h1>{{ wish_list_owner.username }}'s Wish List</h1>
 
+{% if user.is_authenticated and user == wish_list_owner %}
+    <a href="{% url 'add_wish_item' pk=wish_list_owner.id %}">Add Wish Item</a>
+{% endif %}
+
 {% for wish in wishes %}
     <ul>
     {% for item in wish.wish_item %}

@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, JsonResponse
 from .models import WishList, Coal
 from django.contrib.auth.models import User
+from .forms import WishItemForm
 
 # Create your views here.
 
@@ -40,6 +41,26 @@ def wish_list(request, pk):
         },
     )
 
+
+@login_required
+def add_wish_item(request, pk):
+    user = get_object_or_404(User, pk=pk)
+    if request.method == 'POST':
+        form = WishItemForm(request.POST)
+        if form.is_valid():
+            new_item = form.cleaned_data['item']
+            wish_list, created = WishList.objects.get_or_create(fk_user_id=user)
+            if isinstance(wish_list.wish_item, list):
+                wish_list.wish_item.append(new_item)
+            else:
+                wish_list.wish_item = [new_item]
+            wish_list.save()
+            messages.success(request, 'Item added to your wish list!')
+            return redirect('wishes', pk=pk)
+    else:
+        form = WishItemForm()
+    
+    return render(request, 'list/add_wish_item.html', {'form': form})
 
 @login_required
 def coal_wisher(request, pk):
